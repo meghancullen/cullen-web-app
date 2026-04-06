@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+<title>
+  {% block title %} Digital Product Management Home Page{% endblock%}
+</title>
+
+{% block body %}
+<h2>Home Page</h2>
+<p>This is the home page of Digital Product Management Website</p>
+<img
+  src="{{ url_for('static', filename='images/iowa_image.jpg') }}"
+  alt="Iowa corn field"
+/>
+{% endblock %}
